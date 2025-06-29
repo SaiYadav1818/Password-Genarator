@@ -83,7 +83,7 @@ else{
 let getdata=()=>{
   
     setDis(news);
-    if(news=='')
+    if(news==='')
     {
       toast.error("At least one character set must be selected")
     }
@@ -91,7 +91,7 @@ let getdata=()=>{
 let copyPass=()=>{
     navigator.clipboard.writeText(disp)
     
-    if(disp==''){toast.error("Generate a password before copying!")}
+    if(disp===''){toast.error("Generate a password before copying!")}
     else{
       toast.success("Password copied to clipboard!")
     }
